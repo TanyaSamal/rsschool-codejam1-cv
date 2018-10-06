@@ -5,9 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Code Jam 1: Tanya Samal CV</title>
-  <link href="css/reset.css" rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel='stylesheet' href="css/reset.css" type='text/css'>
+  <link rel="stylesheet" href="css/style.css" type='text/css'>
+  <link rel="stylesheet" href="css/prism.css" type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="js/prism.js"></script>
 </head>
 <body>
   <header class="heading">
@@ -119,8 +124,47 @@
   </section>
 
   <section class="portfolio">
+    <h2>JavaScript code Examples</h2>
     <div class="examples">
+      <div class="example ex1">
+        <pre><code class="JS">
+function createMessage(str) {
 
+  let strNew = str;
+  
+  function concatWord(str1){
+    if (!str1) return strNew;
+    strNew = strNew + ' ' + str1;
+    return concatWord;
+  }  
+                    
+  concatWord.valueOf = function(){
+    return strNew;
+  } 
+            
+  return concatWord;
+}</code></pre>
+      </div>  
+      <div class="example ex2">  
+        <pre><code class="JS">
+function prefill(n, v) {
+
+  let number = parseInt(n, 10);
+                    
+  if (isNaN(number) || number &lt; 0) {
+    throw new TypeError(n + " is invalid");
+    return e.message;
+  } else {
+    if ((n % 1) != 0 ){
+      throw new TypeError(n + " is invalid");
+      return e.message;
+    }
+                    
+    return Array(number).fill(v);
+  }
+}
+        </code></pre>
+      </div>        
     </div>
   </section>
 
