@@ -174,11 +174,58 @@ nav ul li a{
 
 .examples{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;  
 }
 
 .example{
-    height: 200px;
-    overflow-y: scroll;
+    height: 270px;
+    background-color: rgb(219, 219, 219);
     margin-left: 30px;
+    padding-top: 40px;
+    width: 30%;
+}
+
+pre{
+    background-color: azure;
+    padding: 0 10px;
+}
+
+pre::before{
+    display: block;
+    position: relative;
+    top: -25px;
+}
+
+.ex1 pre::before{
+    content:"Stringing me along";
+}
+
+.ex2 pre{
+    overflow-x: scroll;
+}
+
+.ex2 pre::before{
+    content:"Prefill an Array";
+}
+
+.ex1{
+    height: 305px;
+}
+
+.ex3{
+    overflow: scroll;
+    height: 305px;
+}
+
+.ex3 pre{
+    width: 500px;
+}
+
+.ex3 pre::before{
+    content:"class Sorter";
+}
+
+.ex4{
+    margin-top: 20px;
 }

@@ -7,12 +7,7 @@
   <title>Code Jam 1: Tanya Samal CV</title>
   <link rel='stylesheet' href="css/reset.css" type='text/css'>
   <link rel="stylesheet" href="css/style.css" type='text/css'>
-  <link rel="stylesheet" href="css/prism.css" type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-  <script src="js/prism.js"></script>
 </head>
 <body>
   <header class="heading">
@@ -127,8 +122,7 @@
     <h2>JavaScript code Examples</h2>
     <div class="examples">
       <div class="example ex1">
-        <pre><code class="JS">
-function createMessage(str) {
+        <pre><code class="JS">function createMessage(str) {
 
   let strNew = str;
   
@@ -143,11 +137,12 @@ function createMessage(str) {
   } 
             
   return concatWord;
-}</code></pre>
+}
+        </code>
+      </pre>
       </div>  
       <div class="example ex2">  
-        <pre><code class="JS">
-function prefill(n, v) {
+        <pre><code class="JS">function prefill(n, v) {
 
   let number = parseInt(n, 10);
                     
@@ -163,9 +158,61 @@ function prefill(n, v) {
     return Array(number).fill(v);
   }
 }
-        </code></pre>
-      </div>        
+        </code>
+      </pre>
+      </div>
+      <div class="example ex3">  
+        <pre><code class="JS">class Sorter {
+
+  constructor() {
+    this.elements = [];
+    this.comparator = (left, right) => left - right;
+  }
+                  
+  add(element) {
+    this.elements.push(element);
+  }
+                  
+  at(index) {
+    return this.elements[index];
+  }
+                  
+  get length() {
+    return this.elements.length;
+  }
+                  
+  toArray() {
+    return this.elements;
+  }
+                  
+  sort(indices) {
+    let arrTemp = [];
+    indices.sort(function(a, b) {
+        return a - b;
+    });
+                  
+    for (let value of indices){
+      arrTemp.push(this.elements[value]);
+    }
+                  
+    arrTemp.sort(this.comparator);
+                  
+    let i = 0;
+    for (let value of indices){
+      this.elements[value] = arrTemp[i];
+      i++;
+    }
+  }
+                  
+  setComparator(compareFunction) {
+    this.comparator = compareFunction;
+  }
+}                              
+          </code>
+        </pre>     
     </div>
+  </div>
+  <div class="ex4">Other examples: <a href="https://www.codewars.com/users/TanyaSamal/completed_solutions" target="_blank">codewars.com</a>, <a href="https://github.com/TanyaSamal" taarget="_blank">github.com</a></div>
   </section>
 
   <footer>
