@@ -16,17 +16,19 @@
     </div>    
     <nav class="menu">
       <ul>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Expirience</a></li>
-        <li><a href="#">Portfolio</a></li>
+        <li><a href="#about-section">About Me</a></li>
+        <li><a href="#education-section">Education</a></li>
+        <li><a href="#work-section">Expirience</a></li>
+        <li><a href="#portfolio-section">Portfolio</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="about">
-    <div class="about-promo">
-      <img src="img/tanya.jpg" width="230" height="230" alt="my photo">
+  <section class="about" id="about-section">
+    <div class="about-promo texture">
+      <figure>
+        <img src="img/tanya.jpg" width="230" height="230" alt="my photo">
+      </figure>
       <div class="info">
         <h3><b>Name:</b> Tanya Samal</h3>
         <h3><b>Date of birth</b>: 18-Sep-1989</h3>
@@ -39,15 +41,16 @@
       <p>I am responsible, executive, diligent and persistent.</p>
       <p>I have some work experience (> 4 years), but I am interested in the related area - web development - and I want to evolve in it.</p>
       <br><p>My motto: there is no limit to knowledge.</p>
-      <h3>Hobbies</h3>
-      <p>photography | guitar | cake making | needlework | manicure</p>
-      <h3>Contact Info</h3>
-      <p><b>phone:</b> (029) 50-60-556</p>
+      <h3 class="hobby">Hobbies</h3>
+      <p>photography | guitar | cake making | needlework | manicure | travels</p>
+      <h3 class="contacts">Contact Info</h3>
+      <p><b>phone, viber:</b> (029) 50-60-556</p>
       <p><b>e-mail:</b> solesytto@gmail.com</p>
+      <p><b>skype:</b> solesytto</p>
     </div>
   </section>
 
-  <section class="education">
+  <section class="education" id="education-section">
       <h2 class="my-education">Education</h2>
       <h3>Belarus State University,<br> Faculty of applied math and computer science<br>2007-2012</h3>
       <p>specialty - actuarial math, qualification – mathematic-financier, GPA(average mark) – 8,9.</p>
@@ -65,8 +68,8 @@
       <a href="https://www.codecademy.com/TanyaSamal" target="_blank">Profile link</a>
   </section>
 
-  <section class="work">
-    <div class="skills">
+  <section class="work" id="work-section">
+    <div class="skills texture">
       <div class="programming-skills">
         <h2>Skills</h2>
         <div class="skillbar" data-percent="70%">
@@ -107,7 +110,7 @@
       </div>
     </div>
     <div class="work-block">
-      <h2>Work Expirience</h2>
+      <h2 class="working">Work Expirience</h2>
       <h3>Web-studio KasperSystems<br>2012-2016</h3>
       <p><b>Position:</b> seo-specialist</p>
       <br><p><b>Skills:</b> website development (at the ready WP Templates) and administration, search engine optimization, internet marketing, advertisement Yandex Direct and Google AdWords.</p>
@@ -118,8 +121,8 @@
     </div>
   </section>
 
-  <section class="portfolio">
-    <h2>JavaScript code Examples</h2>
+  <section class="portfolio" id="portfolio-section">
+    <h2 class="code-ex">JavaScript code Examples</h2>
     <div class="examples">
       <div class="example ex1">
         <pre><code class="JS">function createMessage(str) {
@@ -216,7 +219,9 @@
   </section>
 
   <footer>
-
+    <a href="https://www.facebook.com/NushaSamal" target="_blank"><div class="social fb"></div></a>
+    <a href="https://twitter.com/tanyasamal" target="_blank"><div class="social tw"></div></a>
+    <a href="https://www.instagram.com/solesytto/" target="_blank"><div class="social in"></div></a>
   </footer>
 
 </body>

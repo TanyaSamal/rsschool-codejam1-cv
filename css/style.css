@@ -59,6 +59,10 @@ nav ul li a{
     font-size: 21px;
 }
 
+.texture{
+    background: url(../img/texture.png);
+}
+
 .about{
     display: flex;
     justify-content: center;
@@ -74,12 +78,63 @@ nav ul li a{
 
 .about-promo img{
     border-radius: 50%;
+    width: 85%;
+    height: auto;
 }
 
 .about-section{
     width: 69%;
     border: 1px solid #aaa;
     padding: 20px 30px 50px;
+}
+
+h2.about-me::before {
+    content: "";
+    display: inline-block;
+    background: url(../img/sprite.png); 
+    background-repeat: no-repeat;
+    background-position: 0 -324px;
+    position: relative;
+    top: 15px;
+    width: 65px;
+    height: 60px;
+}
+
+h3.hobby::before{
+    content: "";
+    display: inline-block;
+    background: url(../img/sprite.png); 
+    background-repeat: no-repeat;
+    background-position: 0 -490px;
+    position: relative;
+    top: 15px;
+    width: 50px;
+    height: 42px;
+}
+
+h3.contacts::before{
+    content: "";
+    display: inline-block;
+    background: url(../img/sprite.png); 
+    background-repeat: no-repeat;
+    background-position: 0 -535px;
+    position: relative;
+    top: 15px;
+    width: 50px;
+    height: 42px;   
+}
+
+h2.my-education::before{
+    content: "";
+    display: inline-block;
+    background: url(../img/sprite.png); 
+    background-repeat: no-repeat;
+    background-position: 0 -264px;
+    position: relative;
+    top: 15px;
+    width: 65px;
+    height: 60px;    
+   
 }
 
 .info{
@@ -93,7 +148,21 @@ nav ul li a{
     padding: 20px 30px 50px;
 }
 
-.work{
+.education h3::before, .work-block h3::before{
+    content: "";
+    display: inline-block;
+    background: url(../img/sprite.png); 
+    background-repeat: no-repeat;
+    background-position: 0 -579px;
+    position: relative;
+    top: 10px;
+    right: 42px;
+    width: 30px;
+    height: 30px; 
+    margin-right: -30px;
+}
+
+footer, .work{
     display: flex;
     justify-content: center;  
 }
@@ -102,6 +171,18 @@ nav ul li a{
     border: 1px solid #aaa;
     margin: 30px 0;
     padding: 20px 30px 15px;
+}
+
+h2.working::before {
+    content: "";
+    display: inline-block;
+    background: url(../img/sprite.png); 
+    background-repeat: no-repeat;
+    background-position: 0 -386px;
+    position: relative;
+    top: 15px;
+    width: 70px;
+    height: 50px;
 }
 
 .skills{
@@ -178,6 +259,22 @@ nav ul li a{
     justify-content: center;  
 }
 
+h2.code-ex::before {
+    content: "";
+    display: inline-block;
+    background: url(../img/sprite.png); 
+    background-repeat: no-repeat;
+    background-position: 0 -438px;
+    position: relative;
+    top: 10px;
+    width: 65px;
+    height: 50px;
+}
+
+h2.code-ex, h2.working, h2.my-education, h2.about-me{
+    margin-top: 0;
+}
+
 .example{
     height: 270px;
     background-color: rgb(219, 219, 219);
@@ -227,5 +324,21 @@ pre::before{
 }
 
 .ex4{
-    margin-top: 20px;
+    margin: 30px 0 20px;
+}
+
+.social{
+    width: 60px;
+    height: 60px;
+    background: url(../img/sprite.png) no-repeat;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.tw{
+    background-position: 0 -62px;
+}
+
+.in{
+    background-position: 0 -124px;
 }
